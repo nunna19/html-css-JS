@@ -1,0 +1,87 @@
+body{
+	width: 80%;
+	margin: 0px;
+	background-image: url("image/house_JS1.jpg");
+	background-repeat:no-repeat;
+	background-attachment:scolle;
+}
+#head p{
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-style: italic;
+	letter-spacing: 0.1em;
+	font-size: 18px;
+}
+#head{
+	background: #f2d2e4;
+	padding: 15px 15px;
+	margin: 5px 5px 45px 5px;
+	text-align: center;
+}
+#contrainer{
+	border: 1px solid #9e9696;
+	background-color: white;
+	width: 380px;
+	color: #3a3737;	
+	text-align: center;
+	margin-top: 5%;
+	margin-left: 5%;
+}
+p{
+	text-align: center;
+	font-size: 18px;
+}
+
+#number1{
+	margin-top: 650px;
+	border: 3px double #999;
+}
+#string1{
+	margin-top: 50px;
+	border: 3px double #999;
+}
+#string2{
+	margin-top: 50px;
+	border: 3px double #999;
+}
+#string3{
+	margin-top: 50px;
+	border: 3px double #999;
+}
+#array{
+	margin-top: 50px;
+	border: 3px double #999;
+}
+#string4{
+	margin-top: 50px;
+	border: 3px double #999;
+}
+#operators{
+	margin-top: 50px;
+	border: 3px double #999;
+}
+#background{
+	background-image: url("image/rock.jpg");
+	width: 960px;
+	height: 760px;
+	margin-top:100px ;
+}
+
+#contrainer1{
+	border: 5px double white;
+	margin: 250px 220px;
+	float: left;
+}	
+#box{
+	padding: 15px 15px 15px 15px;
+	margin: 15px 15px;
+	text-align: center;
+	background-color: #333;
+	color: white;
+}
+.paynow{
+	border: 1px solid green;
+	background-color: green;
+	margin-left: 250px;
+}
+	

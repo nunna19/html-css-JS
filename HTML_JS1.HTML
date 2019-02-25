@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Constructive &amp; Co.</title>
+		<link rel="stylesheet" href="CSS_JS1.css" type="text/css" />
+		
+	</head>
+<body>
+	<div id="contrainer">
+		<div id="head">
+			<h1>Constructive &amp; Co.</h1>
+			<p>bespock archietural models</p>
+		</div>
+		<script src="JS1.js" type="text/javascript"></script>
+			<p>For the orders and inquiries please call <em>555-5555</em></p>
+	</div>
+	
+	<!--........................................................................-->
+	<div id="number1">
+		<h1> Elder Flower</h1>
+	<div id="content1">
+		<h2>Custom Signage</h2>
+	</div>
+		<div id="cost"> Cost 5$ per tile</div>
+	</div>
+	
+	<script> 
+		var price;
+		var quantity;
+		var total;
+		price = 5;
+		quantity = 14;
+		total = price * quantity;
+		
+		var el = document.getElementById("cost");
+		el.textContent ="$"+total;
+	</script>
+	
+	<!--........................................................................-->
+	
+	
+	<div id="string1">
+		<h1> Elder Flower</h1>
+	<div id="content2">
+		<div id="title1">Holly <span id="name">friend</span>!</div>
+		<div id="note1">take a look around</div>
+	</div>
+	</div>
+	
+	<script> 
+		var username;
+		var message;
+		username = "Molly"
+		message = "see our up comimh range";
+	
+		var elName = document.getElementById('name');
+		elName.textContent = username;
+		var elNote = document.getElementById('note1');
+		elNote.textContent = message;
+	</script>
+	<!--........................................................................-->
+	
+	<div id="string2">
+		<h1> Elder Flower</h1>
+	<div id="content3">
+		<div id="title2">Specail Offers</div>
+		<div id="note2">Sign-up to receive personalized offers!</div>
+	</div>
+	</div>
+	<script>
+	var title;
+	var message;
+	title = "molly's Special Offers";
+	message = '<a href=\"sale.html"\>25% Off!</a>';
+	
+	var elTitle = document.getElementById('title2');
+	elTitle.innerHTML = title;
+	var elNote = document.getElementById('note2');
+	elNote.innerHTML = message
+	</script>
+	<!--........................................................................-->
+	
+	<div id="string3">
+		<h1> Elder Flower</h1>
+	<div id="content4">
+		<div class="massgse">Available:<span id="stock"></span></div>
+		<div class="massage">Shipping:<span id="shipping"></span></div>
+	</div>
+	</div>
+	
+	<script>
+	var inStock;
+	var shipping;
+	inStock=true;
+	shipping=false;
+	
+	var elStock=document.getElementById('stock');
+	elStock.className=inStock;
+	var elShip=document.getElementById('shipping');
+	elShip.className=shipping;
+	</script>
+	<!--........................................................................-->
+	
+	<div id='array'>
+	<h2>my fevorit colors</h2>
+	<div id='colors'>.....</div>
+	</div>
+	<script>
+	var colors= ['white',
+				 'black',
+				 'custom'];
+	colors[2]='pink';
+	var el= document.getElementById('colors');
+	el.textContent= colors[2];
+	</script>
+	<!--........................................................................-->
+	<div id="string4">
+		<h1>Elder Flower</h1>
+	<div id='content5'>
+	<div id="greeting" class="message">Hello <span id="name">friend</span>!</div>
+	</div>
+	</div>
+	
+	<script>
+	var greeting='Howdy ';
+	var name='Molly';
+	var welcomeMessage= greeting+name+'!';
+	var el=document.getElementById('greeting');
+	el.textContent= welcomeMessage;
+	</script>
+	<!--........................................................................-->
+	
+	<div id="operators">
+	<table>
+		<tr>
+			<th>Subtotal:<span id="Subtotal1">...</span></th>
+		</tr>
+		<tr>
+			<th>Shipping:<span id="Shipping1">...</span></li>
+		</tr>
+		<tr>
+			<th>Grandtotal:<span id="Total">...</span></th>
+	</table>
+	</div>
+	</div>
+	<script>
+	var subtotal= (13+1)*5;
+	var shipping= 0.5*(13+1);
+	
+	var total= subtotal+shipping;
+	
+	var elsubtotal=document.getElementById('Subtotal1')
+	elsubtotal.textContent='$'+subtotal;
+	
+	var elshipping=document.getElementById('Shipping1')
+	elshipping.textContent='$'+shipping;
+	
+	var eltotal=document.getElementById('Total')
+	eltotal.textContent='$'+total;
+	</script>
+	
+	<!--........................................................................-->
+	
+	<div id="background">
+	<div id="contrainer1">
+		<div id="box">
+			<div id="Greeting">Hello!<span id="name">...</span></div>
+			<table>
+				<tr>
+					<th>Custom sign:</th>
+					<td></td>
+					<td id='Sign'></td>
+				</tr>
+				<tr>
+					<th>Total tiles:</th>
+					<td></td>
+					<td id="Tiles"></td>
+				</tr>
+				<tr>
+					<th>Subtotal:</th>
+					<td></td>
+					<td id="Subtotal"></td>
+				</tr>
+				<tr>
+				<th>Shipping:</th>
+				<td></td>
+				<td id="Shipping"></td>
+				</tr>
+				<tr>
+				<th>Grand total:</th>
+				<td></td>
+				<td id="Grandtotal"></td>
+				</tr>
+			</table>
+			<a class='paynow' href="#">Pay Now</a>
+		</div>
+	</div>
+	</div>
+	
+	<script>
+	var today= new Date();
+	var hoursNow=today.getHours();
+	var name=' Nuuna!'
+	var massage=' please check your order'
+	var greeting;
+	if (hoursNow>18) {
+		greeting= 'Good Evening';
+	}else if (hoursNow>12) {
+		greeting= 'Good Afternoon';
+	}else if (hoursNow>0) {
+		Greeting= 'Good Morning';
+	}else {
+		greeting= 'welcome';
+	}
+	
+	var welcome= greeting + name + massage;
+	document.getElementById('Greeting').innerHTML='<h3>'+welcome+'<h3>'
+	
+	
+	
+	var sign = 'Montague House';
+	var tiles= sign.length;
+	var subTotal=tiles * 5;
+	var shipping=7;
+	var grandTotal=subtotal + shipping;
+	
+	var elsign=document.getElementById('Sign');
+	elsign.textContent=sign;
+	
+	var eltiles=document.getElementById('Tiles');
+	eltiles.textContent=tiles;
+	
+	var elsub=document.getElementById('Subtotal');
+	elsub.textContent='$'+subTotal;
+	
+	var elship=document.getElementById('Shipping');
+	elship.textContent='$'+shipping;
+	
+	var eltotal=document.getElementById('Grandtotal');
+	eltotal.textContent='$'+grandTotal;
+	</script>
+	
+	
+	
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+	
+	
+</html>
